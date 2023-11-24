@@ -1,5 +1,3 @@
-import coffeeInput from "./coffeeInput";
-
 export function halfLifeEquation(
   coffeeInput: () => number
   // threshold: number,
@@ -7,7 +5,7 @@ export function halfLifeEquation(
 ): number | null {
   // Calculate the decay constant (k)
   const halfLife: number = 4; // in hours, how long it takes caffeine in system to halve
-  const threshold: number = 10; // In mg, amount left in system to be considered gone
+  const threshold: number = 5; // In mg, amount left in system to be considered gone
   const decayConstant = Math.log(2) / halfLife;
   let remainingAmount = coffeeInput();
   let elapsedTime = 0;
