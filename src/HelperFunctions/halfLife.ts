@@ -39,3 +39,7 @@ if (timeToElimination !== null) {
     "Caffeine may not reach the elimination threshold within the provided time frame."
   );
 }
+
+// In this example, calculateTimeToElimination takes the initial amount of caffeine (initialAmount), the threshold amount for considering caffeine eliminated (threshold), and the half-life of caffeine (halfLife). It iteratively calculates the remaining amount of caffeine until it falls below the threshold and returns the elapsed time.
+
+// Keep in mind that this is a simple model and may not perfectly represent individual variations in metabolism. Additionally, it assumes that time is measured in discrete units, and the precision depends on the chosen time increment in the loop.
